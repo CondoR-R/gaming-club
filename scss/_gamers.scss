@@ -1,0 +1,44 @@
+.gamers {
+    background: $color-blue-dark;
+    grid-column: col-start 7 / full-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include respond(Laptop-M) {
+        grid-column: col-start 5 / full-end;
+    }
+    @include respond(tablet) {
+        grid-column: full-start / full-end;
+    }
+    &__title {
+        margin-bottom: 4rem;
+    }
+}
+.gamer {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 2rem;
+    align-items: center;
+    &:not(:last-child) {
+        margin-bottom: 4rem;
+    }
+    &__img {
+        img {
+            border-radius: 100rem;
+            width: 7rem;
+            height: 7rem;
+        }
+    }
+    &__text {
+        p {
+            font-size: 1.9rem;
+            font-weight: 700;
+        }
+        span {
+            font-size: 1.6rem;
+            font-weight: 100;
+            color: $color-gray-dark;
+        }
+    }
+}

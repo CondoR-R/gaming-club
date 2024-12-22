@@ -1,0 +1,55 @@
+.banner {
+    &-img {
+        background: $color-blue-dark url(../img/banner-bg.png) center / cover no-repeat;
+        grid-column: full-start / col-end 4;
+        position: relative;
+        @include respond(Laptop-M) {
+            grid-column: full-start / col-end 3;
+        }
+        @include respond(tablet) {
+            display: none;
+        }
+        &__img {
+            width: 30vw;
+            position: absolute;
+            border-radius: 2rem;
+            transition: all .3s;
+            &:hover {
+                transform: scale(1.1);
+                z-index: 10;
+            }
+            &_1 {
+                top: 15%;
+                left: 20%;
+            }
+            &_2 {
+                top: 45%;
+                left: 40%;
+            }
+        }
+    }
+    &-text {
+        background: $color-blue-dark;
+        grid-column: col-start 5 / full-end;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0 4vw;
+        @include respond(Laptop-M) {
+            grid-column: col-start 4 / full-end;
+        }
+        @include respond(tablet) {
+            grid-column: full-start / full-end;
+        }
+        &__title {
+            margin-bottom: 3rem;
+        }
+        &__text {
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 113%;
+            margin-bottom: 4rem;
+        }
+    }
+}

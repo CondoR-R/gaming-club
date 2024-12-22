@@ -1,0 +1,47 @@
+.sidebar {
+    background: $color-green-dark;
+    grid-column: sidebar-start / sidebar-end;
+    grid-row: 1 / -1;
+}
+.hamburger {
+    border: none;
+    height: 2rem;
+    width: 5rem;
+    background: transparent;
+    span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: $color-gray-light;
+        height: .2rem;
+        width: 5rem;
+        @include respond(tablet) {
+            width: 3rem;
+        }
+        &::before, &::after {
+            content: "";
+            background: $color-gray-light;
+            height: .2rem;
+            width: 5rem;
+            display: block;
+            @include respond(tablet) {
+                width: 3rem;
+            }
+        }
+        &::before {
+            transform: translateY(-1rem);
+        }
+        &::after {
+            transform: translateY(1rem);
+        }
+    }
+    position: fixed;
+    top: 3.6rem;
+    left: 1.4rem;
+    cursor: pointer;
+    @include respond(tablet) {
+        width: 3rem;
+        left: 1rem;
+    }
+}

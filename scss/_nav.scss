@@ -1,0 +1,24 @@
+.nav {
+    &__ul {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-gap: 3.5rem;
+        justify-items: center;
+    }
+    &__li {
+        text-align: center;
+    }
+    &__a {
+        &:visited, &:link {
+            color: $color-gray-light;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 100;
+            transition: all .2s;
+        }
+        &:hover, &:active {
+            color: $color-green-light;
+        }
+    }
+}

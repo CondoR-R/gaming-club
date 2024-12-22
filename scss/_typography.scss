@@ -1,0 +1,41 @@
+.title-1 {
+    font-size: 4.5rem;
+    color: $color-gray-light;
+    font-weight: 700;
+    &__span {
+        font-size: 1.9rem;
+        font-weight: 100;
+        letter-spacing: 13%;
+        color: $color-green-light;
+        text-transform: uppercase;
+    }
+}
+.title-2 {
+    font-size: 4rem;
+    color: $color-gray-light;
+    font-weight: 700;
+    line-height: 100%;
+    &__span {
+        font-size: 1.7rem;
+        font-weight: 100;
+        letter-spacing: 13%;
+        color: $color-green-light;
+        text-transform: uppercase;
+    }
+}
+.title-3 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: $color-green-dark;
+    &_white {
+        color: $color-gray-light;
+    }
+    &_green-light {
+        color: $color-green-light;
+        text-transform: uppercase ;
+    }
+    &_grey {
+        color: $color-gray-dark;
+        font-size: 1.6rem;
+    }
+}

@@ -1,0 +1,15 @@
+.footer {
+    background: $color-blue-dark;
+    grid-column: full-start / full-end;
+    padding: 8rem 3rem;
+    &__logo {
+        display: block;
+        margin-bottom: 8rem;
+    }
+    &__img {
+        width: 12rem;
+        height: 4.1rem;
+        display: block;
+        margin: 0 auto;
+    }
+}
