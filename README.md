@@ -3,4 +3,4 @@
 Цель проекта:  
 отработка grid layout
 
-[Ссылка на проект]()
+[Ссылка на проект](https://condor-r.github.io/gaming-club/)
